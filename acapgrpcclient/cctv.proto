@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/Cacsjep/acapgrpcclient/cctv";
+
+service CCTVService {
+  rpc StreamVideo(stream FrameMessage) returns (stream Acknowledgement);
+}
+
+message FrameMessage {
+  bytes frame = 1;
+}
+
+message Acknowledgement {
+  string message = 1;
+}
