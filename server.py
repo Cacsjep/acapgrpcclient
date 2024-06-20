@@ -8,7 +8,7 @@ import cctv_pb2_grpc
 class CCTVService(cctv_pb2_grpc.CCTVServiceServicer):
     def StreamVideo(self, request_iterator, context):
         for frame in request_iterator:
-            print(f"Received frame: {frame.frame}")
+            print(f"Received frame: {len(frame.frame)}")
             yield cctv_pb2.Acknowledgement(message=f"Received frame with length: {len(frame.frame)}")
 
 def serve():
