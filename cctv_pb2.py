@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\ncctv.proto\"\x1d\n\x0c\x46rameMessage\x12\r\n\x05\x66rame\x18\x01 \x01(\x0c\"\"\n\x0f\x41\x63knowledgement\x12\x0f\n\x07message\x18\x01 \x01(\t2A\n\x0b\x43\x43TVService\x12\x32\n\x0bStreamVideo\x12\r.FrameMessage\x1a\x10.Acknowledgement(\x01\x30\x01\x42(Z&github.com/Cacsjep/acapgrpcclient/cctvb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\ncctv.proto\"e\n\x0c\x46rameMessage\x12\r\n\x05\x66rame\x18\x01 \x01(\x0c\x12\x0e\n\x06height\x18\x02 \x01(\x05\x12\r\n\x05width\x18\x03 \x01(\x05\x12\x14\n\x0csequence_nbr\x18\x04 \x01(\x05\x12\x11\n\tframerate\x18\x05 \x01(\x05\"\"\n\x0f\x41\x63knowledgement\x12\x0f\n\x07message\x18\x01 \x01(\t2A\n\x0b\x43\x43TVService\x12\x32\n\x0bStreamVideo\x12\r.FrameMessage\x1a\x10.Acknowledgement(\x01\x30\x01\x42(Z&github.com/Cacsjep/acapgrpcclient/cctvb\x06proto3')
 
 
 
@@ -40,9 +40,9 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'Z&github.com/Cacsjep/acapgrpcclient/cctv'
   _FRAMEMESSAGE._serialized_start=14
-  _FRAMEMESSAGE._serialized_end=43
-  _ACKNOWLEDGEMENT._serialized_start=45
-  _ACKNOWLEDGEMENT._serialized_end=79
-  _CCTVSERVICE._serialized_start=81
-  _CCTVSERVICE._serialized_end=146
+  _FRAMEMESSAGE._serialized_end=115
+  _ACKNOWLEDGEMENT._serialized_start=117
+  _ACKNOWLEDGEMENT._serialized_end=151
+  _CCTVSERVICE._serialized_start=153
+  _CCTVSERVICE._serialized_end=218
 # @@protoc_insertion_point(module_scope)

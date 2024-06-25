@@ -8,6 +8,10 @@ service CCTVService {
 
 message FrameMessage {
   bytes frame = 1;
+  int32 height = 2;
+  int32 width = 3;
+  int32 sequence_nbr = 4;
+  int32 framerate = 5;
 }
 
 message Acknowledgement {
